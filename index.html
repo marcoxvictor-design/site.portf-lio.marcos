@@ -1,120 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
+    <!-- Configuração de caracteres -->
     <meta charset="UTF-8">
+
+    <!-- Deixa o site responsivo em celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Meu Portfólio</title>
 
+    <!-- Arquivo CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- MENU -->
+    <!-- ================= MENU DE NAVEGAÇÃO ================= -->
     <header>
+
         <nav>
+
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
         </nav>
+
     </header>
 
-    <!-- SOBRE -->
-    <section id="sobre">
+    <!-- =============== CONTEÚDO PRINCIPAL =============== -->
+    <main>
 
-        <h1>Olá, eu sou Marcos Victor</h1>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre">
 
-        <img src="fotomarcos.jpeg" alt="Minha foto" width="30%" height="15%">
+            <h1>Olá, eu sou Marcos Victor</h1>
 
-        <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas na Uninter. 
-            Sou Eletromecânico e tenho experiência em manutenção de equipamentos eletrônicos.
-            Tenho interesse em programação, desenvolvimento web e tecnologia.
-            Ando trabalhando muito mas nos momentos livres curto ouvir músicas e estar junto de minha namorada.
-        </p>
+            <!-- Foto do perfil -->
+            <img src="fotomarcos.jpeg" alt="Foto de Marcos Victor">
 
-    </section>
+            <!-- Pequena apresentação -->
+            <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas na Uninter.
+                Sou Eletromecânico e tenho experiência em manutenção de equipamentos
+                eletrônicos. Tenho interesse em programação, desenvolvimento web e
+                tecnologia. Nos momentos livres gosto de ouvir músicas e estar junto
+                da minha namorada.
+            </p>
 
-    <!-- FORMAÇÃO -->
-    <section id="formacao">
+        </section>
 
-        <h2>Formação</h2>
+        <!-- Seção Formação -->
+        <section id="formacao">
 
-        <ul>
-            <li>Ensino Médio Completo - SESI</li>
-           <li>Tecnico em Eletrotecnica - SENAI</li>
-            <li>Análise e Desenvolvimento de Sistemas - UNINTER</li>
-        </ul>
+            <h2>Formação</h2>
 
-    </section>
+            <!-- Lista de cursos -->
+            <ul>
+                <li>Ensino Médio Completo - SESI</li>
+                <li>Técnico em Eletrotécnica - SENAI</li>
+                <li>Análise e Desenvolvimento de Sistemas - UNINTER</li>
+            </ul>
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio">
+        </section>
 
-        <h2>Portfólio</h2>
+        <!-- Seção Portfólio -->
+        <section id="portfolio">
 
-        <div class="projeto">
-            <h3>Calculadora</h3>
-            <p>Projeto desenvolvido utilizando HTML, CSS e JavaScript.</p>
-        </div>
+            <h2>Portfólio</h2>
 
-        <div class="projeto">
-            <h3>Página de Login</h3>
-            <p>Interface simples criada para estudos.</p>
-        </div>
+            <!-- Projeto 1 -->
+            <article class="projeto">
+                <h3>Calculadora</h3>
+                <p>Projeto desenvolvido utilizando PYTHON.</p>
+            </article>
 
-        <div class="projeto">
-            <h3>Lista de Tarefas</h3>
-            <p>Aplicação para organizar atividades.</p>
-        </div>
+            <!-- Projeto 2 -->
+            <article class="projeto">
+                <h3>Calculadora de IMC</h3>
+                <p>Saiba como seu peso afeta sua saúde.</p>
+            </article>
 
-    </section>
+            <!-- Projeto 3 -->
+            <article class="projeto">
+                <h3>Lista de Tarefas</h3>
+                <p>Aplicação para organizar atividades.</p>
+            </article>
 
-    <!-- CONTATO -->
-    <section id="contato">
+        </section>
 
-        <h2>Contato</h2>
+        <!-- Seção Contato -->
+        <section id="contato">
 
-        <form id="formContato">
+            <h2>Contato</h2>
 
-            <label>Nome</label>
-            <input
-                type="text"
-                id="nome"
-                placeholder="Digite seu nome">
+            <!-- Formulário de contato -->
+            <form id="formContato">
 
-            <label>E-mail</label>
-            <input
-                type="email"
-                id="email"
-                placeholder="Digite seu e-mail">
+                <!-- Campo Nome -->
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required>
 
-            <label>Mensagem</label>
-            <textarea
-                id="mensagem"
-                rows="6"
-                placeholder="Digite sua mensagem"></textarea>
+                <!-- Campo E-mail -->
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
 
-            <button type="submit">
-                Enviar
-            </button>
+                <!-- Campo Mensagem -->
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem"
+                    required></textarea>
 
-        </form>
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
 
-    </section>
+            </form>
 
+        </section>
+
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
     <footer>
 
         <p>
-            © 2026 - Desenvolvido por Marcos Victor dos Santos Dias. Todos os direitos reservados.
+            © 2026 - Desenvolvido por Marcos Victor dos Santos Dias.
+            Todos os direitos reservados.
         </p>
 
     </footer>
 
-<script src="script.js"></script>
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
